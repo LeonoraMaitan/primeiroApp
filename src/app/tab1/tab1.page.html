@@ -1,17 +1,83 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="true" >
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Cardapio
     </ion-title>
+    <ion-buttons slot="secondary">
+      <ion-button>
+        <ion-icon slot="icon-only" name="person-circle"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content  [fullscreen]="true">
+  <ion-searchbar color ="dark" placeholder ="Buscar" ></ion-searchbar>
+  
+  <ion-list-header>
+    <ion-label>Pizzas</ion-label>
+  </ion-list-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-list>
+    <ion-item>
+      <ion-item >
+        <ion-thumbnail slot="start">
+          <img  src="https://www.designi.com.br/images/preview/10000490.jpg">
+        </ion-thumbnail>
+      </ion-item>
+      <ion-label class="texto ">Marguerita</ion-label>
+      <ion-item>
+        <ion-badge slot="end">45,00</ion-badge>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://i.pinimg.com/originals/fe/fa/bf/fefabfd88eac6242acff8bf0e4f2c030.png">
+        </ion-thumbnail>
+      </ion-item>
+      <ion-label>Mega Man X</ion-label>
+      <ion-item>
+        <ion-badge slot="end">45,00</ion-badge>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://www.designi.com.br/images/preview/10025263.jpg">
+        </ion-thumbnail>
+      </ion-item>
+      <ion-label>The Legend of Zelda</ion-label>
+      <ion-item>
+        <ion-badge slot="end">45,00</ion-badge>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://imagensemoldes.com.br/wp-content/uploads/2020/04/Imagem-Pizza-PNG.png">
+        </ion-thumbnail>
+      </ion-item>
+      <ion-label>Pac-Man</ion-label>
+      <ion-item>
+        <ion-badge slot="end">45,00</ion-badge>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="https://www.designi.com.br/images/preview/10001928.jpg">
+        </ion-thumbnail>
+      </ion-item>
+      <ion-label>Super Mario World</ion-label>
+      <ion-item>
+        <ion-badge slot="end">45,00</ion-badge>
+      </ion-item>
+    </ion-item>
+  </ion-list>
+  
 </ion-content>
